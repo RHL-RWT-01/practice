@@ -2,8 +2,7 @@ import { useState } from "react";
 import useLocalStorage from "./components/UseLocalStorage";
 
 function App() {
-  const { count, setCount } = useLocalStorage("Counter", 0);
-
+  const {count, setCount} = useLocalStorage("count", 0);
   return (
     <>
       <h2>Count: {count}</h2>

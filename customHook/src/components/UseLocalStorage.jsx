@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 function useLocalStorage(key, data=0) {
-  const [count, setCount] = useState(data);
-  const savedCount = parseInt(localStorage.getItem(key));
+  const [count, setCount] = useState(parseInt(localStorage.getItem(key)));
 
   useEffect(() => {
-    localStorage.setItem(key, count.toString());
-  }, [count]);
+    localStorage.setItem(key, data.toString());
+  }, [data]);
 
-  return { savedCount, setCount };
+  return { count, setCount };
 }
 
 export default useLocalStorage;
