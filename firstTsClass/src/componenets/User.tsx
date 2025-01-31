@@ -13,7 +13,7 @@ function User() {
     const handleClick = () => {
         details.push(loginInfo);
         setLoginInfo({ userId: '', password: '' });
-        idRef.current.focus();
+        // idRef.current.focus();
     }
 
     return (
