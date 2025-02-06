@@ -7,9 +7,9 @@ function App() {
   
   return (
     <>
-    <Provider store={Store}>
+    {/* <Provider store={Store}> */}
       <Todo/>
-    </Provider>
+    {/* </Provider> */}
     
     </>
   )

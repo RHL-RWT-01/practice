@@ -1,19 +1,23 @@
-type Contact = {
-    phone: string,
-    email: string
+// type Contact = {
+//     phone: string,
+//     email: string
+// }
+interface Contact  {
+        phone: string,
+        email: string
 }
 
-type Address = {
+interface Address extends Contact  {
     city: string,
     state: string,
     country: string,
-    contact: Contact
+    // contact: Contact
 }
 
-type User = {
+interface User extends Address {
     name: string,
     age: number,
-    address: Address
+    // address: Address
 }
 
 function Home({ name, age, address }: User) {
