@@ -2,12 +2,12 @@
 //     phone: string,
 //     email: string
 // }
-interface Contact  {
-        phone: string,
-        email: string
+interface Contact {
+    phone: string,
+    email: string
 }
 
-interface Address extends Contact  {
+interface Address extends Contact {
     city: string,
     state: string,
     country: string,
