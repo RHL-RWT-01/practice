@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 function FilterMatches() {
     const [selectedOption,setSelectedOption]=useState('select');
     const matches=useSelector(state=>state.footballMatches);
+    
+    const action=useDispatch();
+    const handleClick=()=>{
+        action(filterByTeamName(selectedOption));
+    }
     const handleChange=(e)=>{
         setSelectedOption(e.target.value);
-  
     }
   return (
     <>
@@ -19,6 +23,7 @@ function FilterMatches() {
         <option value="Basel">Basel</option>
         <option value="AFC Ajax" >AFC Ajax</option>
       </select>
+      <button onClick={handleClick()}>Get</button>
     </>
   )
 }

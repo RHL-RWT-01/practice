@@ -9,7 +9,7 @@ function MatchesList() {
   return (
     <>
       <h2>Matches List</h2>
-      {/* <FilterMatches/> */}
+      <FilterMatches/>
       <ul>
         {footballMatches.map((match, index) => {
           return <li key={index}>
