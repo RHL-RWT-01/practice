@@ -11,6 +11,8 @@ function MatchesList() {
       <ul>
         {footballMatches.map((match, index) => {
           return <li key={index}>
+                <h2>Match {index + 1}</h2>
+                <h3>{match.round}</h3>
                 {match.team1} vs {match.team2}
                 <p>{match.year}</p>
                 <h3>{match.competition}</h3>
