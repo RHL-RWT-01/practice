@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import FilterMatches from "./FilterMatches";
 // import FilterMatches from "./FilterMatches";
 
 function MatchesList() {
@@ -9,7 +10,7 @@ function MatchesList() {
   return (
     <>
       <h2>Matches List</h2>
-      <FilterMatches/>
+      {/* <FilterMatches/> */}
       <ul>
         {footballMatches.map((match, index) => {
           return <li key={index}>
