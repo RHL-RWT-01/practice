@@ -7,6 +7,11 @@ function Movies() {
   const handleClick=()=>{
     action(getMovies());
   }
+  const fetchMovies = async () => {
+    const response = await fetch("http://localhost:3001/movies");
+    const data = await response.json();
+    action(getMovies(data));
+  };
   return (
     <>
       <h1>Movies</h1>
