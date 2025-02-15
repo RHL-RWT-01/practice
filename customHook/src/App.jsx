@@ -1,18 +1,19 @@
-import { useState } from "react";
+import React from "react";
 import useLocalStorage from "./components/UseLocalStorage";
 
+
 function App() {
-  const {count, setCount} = useLocalStorage("count", 0);
+  const [name, setName] = useLocalStorage("username", "Rahul");
+
   return (
-    <>
-      <h2>Count: {count}</h2>
-
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-
-      <button onClick={() => setCount(count - 1)}>Decrement</button>
-      <br />
-      <button onClick={() => setCount(0)}>Reset</button>
-    </>
+    <div>
+      <h1>Welcome, {name}</h1>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+    </div>
   );
 }
 
