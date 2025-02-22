@@ -11,6 +11,7 @@ function Counter() {
      <h2>Count:{count}</h2>
      <button onClick={()=>action(increment())}>Increment</button>
      <button onClick={()=>action(decrement())} >Decrement</button>
+     <button onClick={()=>action(reset())}>Reset</button>
     </>
   )
 }
