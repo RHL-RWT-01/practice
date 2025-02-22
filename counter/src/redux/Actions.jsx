@@ -9,3 +9,8 @@ export const increment = () => {
       type: "DECREMENT",
     };
   };
+  export const reset = () => {
+    return {
+      type: "RESET",
+    };
+  }
