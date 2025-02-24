@@ -1,6 +1,5 @@
 const crypto = require('crypto');
 
-// Retrieve command line arguments
 const args = process.argv.slice(2);
 
 if (args.length < 2 && args[0] !== 'random') {
@@ -11,7 +10,6 @@ if (args.length < 2 && args[0] !== 'random') {
 
 const operation = args[0].toLowerCase();
 
-// Function to parse numbers from arguments
 const parseNumbers = (arr) => arr.map(num => {
     const parsed = parseFloat(num);
     if (isNaN(parsed)) {
