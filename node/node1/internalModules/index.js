@@ -23,7 +23,7 @@ function read(){
 }
 
 function update(){
-    fs.appendFile('./masai.text','\n I am learning Backend', (err) => {
+    fs.appendFile('./a.text','\n I am learning Backend', (err) => {
         if (err) throw err;
         console.log('Updated');
     });
