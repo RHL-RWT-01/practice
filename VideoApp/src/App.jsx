@@ -5,7 +5,6 @@ dotenv.config();
 const API_KEY =process.env.API_KEY; ;
 const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
-// Custom Hook for fetching YouTube search results
 const useYouTubeSearch = (query) => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(false);
