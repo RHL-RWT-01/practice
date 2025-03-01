@@ -1,0 +1,77 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 899.99,
+        "stock": 15,
+        "brand": "Dell",
+        "ratings": 4.5
+      },
+      {
+        "id": 2,
+        "name": "Wireless Mouse",
+        "category": "Accessories",
+        "price": 25.99,
+        "stock": 50,
+        "brand": "Logitech",
+        "ratings": 4.7
+      },
+      {
+        "id": 3,
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 699.99,
+        "stock": 30,
+        "brand": "Samsung",
+        "ratings": 4.6
+      },
+      {
+        "id": 4,
+        "name": "Desk Chair",
+        "category": "Furniture",
+        "price": 129.99,
+        "stock": 20,
+        "brand": "Ikea",
+        "ratings": 4.3
+      },
+      {
+        "id": 5,
+        "name": "Backpack",
+        "category": "Travel",
+        "price": 49.99,
+        "stock": 40,
+        "brand": "Nike",
+        "ratings": 4.8
+      },
+      {
+        "id": 6,
+        "name": "Headphones",
+        "category": "Electronics",
+        "price": 199.99,
+        "stock": 25,
+        "brand": "Sony",
+        "ratings": 4.7
+      },
+      {
+        "id": 7,
+        "name": "Water Bottle",
+        "category": "Home & Kitchen",
+        "price": 15.99,
+        "stock": 100,
+        "brand": "Hydro Flask",
+        "ratings": 4.9
+      },
+      {
+        "id": 8,
+        "name": "Running Shoes",
+        "category": "Footwear",
+        "price": 89.99,
+        "stock": 35,
+        "brand": "Adidas",
+        "ratings": 4.4
+      }
+    ]
+  }
+  
