@@ -23,7 +23,7 @@ function App() {
     <>
       <Home name={user.name} age={user.age} address={user.address} />
       {/* <User user={user} /> */}
-      <Interface name={user.name} age={user.age} email={user.address.contact.email} />
+      <Interface name={user.name} age={user.age} email={user.address.contact.email} salary={40000000}/>
 
     </>
   )
