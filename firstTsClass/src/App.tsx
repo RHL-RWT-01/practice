@@ -1,5 +1,6 @@
 // import { useState } from "react"
 import Home from "./componenets/Home"
+import Interface from "./componenets/Interface"
 // import User from "./componenets/User"
 // import Home from "./componenets/Home"
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <>
       <Home name={user.name} age={user.age} address={user.address} />
       {/* <User user={user} /> */}
+      <Interface name={user.name} age={user.age} email={user.address.contact.email} />
 
     </>
   )
