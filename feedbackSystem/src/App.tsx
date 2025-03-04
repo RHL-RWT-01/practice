@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { submitFeedback } from './state/Actions';
 
 function App() {
   const [feedback, setfeedback] = useState('')
-
+  const feedbackReducer = useSelector((state: any) => state.feedbackReducer)
+  const action = useDispatch();
   return (
     <>
       <h1>Feedback system</h1>
@@ -27,7 +30,7 @@ function App() {
           Feedback
           <input type="text" onChange={e=>setfeedback(e.target.value)} />
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={action(submitFeedback(feedback))}>Submit</button>
       </form>
     </>
   )
