@@ -1,10 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [feedback, setfeedback] = useState('')
 
   return (
     <>
@@ -28,7 +25,7 @@ function App() {
       <form>
         <label>
           Feedback
-          <input type="text" />
+          <input type="text" onChange={e=>setfeedback(e.target.value)} />
         </label>
         <button type="submit">Submit</button>
       </form>
