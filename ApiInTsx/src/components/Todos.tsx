@@ -33,7 +33,13 @@ function Todos() {
             textAlign:"center",
             padding:"10px",}
             }
-            >{todos.map((todo: Todo) => <li key={todo.id}>{todo.title}
+            >{todos.map((todo: Todo) => <li
+            style={{backgroundColor:"red",
+            color:"white",
+            padding:"10px",
+            margin:"10px",
+            }}
+            key={todo.id}>{todo.title}
             <input type="checkbox" checked={todo.completed} ></input></li>)}</ul>}
         </>
     )
