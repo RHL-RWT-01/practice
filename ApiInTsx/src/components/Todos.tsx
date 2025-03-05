@@ -15,7 +15,11 @@ function Todos() {
 
     return (
         <>
-            <h1>Todos</h1>
+            <h1 style={{backgroundColor:"aqua",
+            color:"black",
+            textAlign:"center",
+            padding:"10px",
+            }} >Todos</h1>
             <button onClick={handleClick} >Get</button>
             {todos.length == 0 ? <p>No todos</p> : <ul>{todos.map((todo: Todo) => <li key={todo.id}>{todo.title}
             <input type="checkbox" checked={todo.completed} ></input></li>)}</ul>}
